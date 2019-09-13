@@ -1,0 +1,36 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+flake8-blind-except = "*"
+flake8-bugbear = "*"
+flake8-builtins = "*"
+flake8-debugger = "*"
+flake8-print = "*"
+flake8-quotes = "*"
+flake8-todo = "*"
+flake8-variables-names = "*"
+pep8-naming = "*"
+flake8-per-file-ignores = "*"
+black = "*"
+
+[packages]
+aiogram = "*"
+ujson = "*"
+uvloop = "*"
+requests = "*"
+python-dotenv = "*"
+pre-commit = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+lint = "flake8"
+format = "black --line-length 120"
+
+[pipenv]
+allow_prereleases = true
