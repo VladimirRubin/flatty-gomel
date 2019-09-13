@@ -1,19 +1,13 @@
-"""
-This is a echo bot.
-It echoes any incoming text messages.
-"""
-
 import logging
+import settings
 
 from aiogram import Bot, Dispatcher, executor, types
-
-API_TOKEN = "805817039:AAGeuzqxxJ0HjEL43f8TBtMmjl1Yo4oECRo"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
 # Initialize bot and dispatcher
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=settings.BOT_TOKEN)
 dp = Dispatcher(bot)
 
 
